@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Lab - We Simplify AI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">Hello World</div>
+            <div class="nav-links">
+                <button class="nav-btn active" data-tab="products">Products</button>
+                <button class="nav-btn" data-tab="services">Services</button>
+                <button class="nav-btn" data-tab="talents">Talents</button>
+                <button class="nav-btn" data-tab="kids">Kids</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>We Simplify <span class="highlight">AI</span></h1>
+            <p class="subtitle">We help you use AI for your business</p>
+            <button class="cta-button" onclick="document.querySelector('[data-tab=services]').click()">
+                <span class="cta-text">Explore Our Services</span>
+                <span class="cta-icon">→</span>
+            </button>
+        </section>
+
+        <section class="content products active" id="products">
+            <div class="glass-card">
+                <h2>AI Products</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>AI Analytics</h3>
+                        <p>Transform your data into actionable insights</p>
+                    </div>
+                    <div class="card">
+                        <h3>ChatBots</h3>
+                        <p>Intelligent conversation agents for your business</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content services" id="services">
+            <div class="glass-card">
+                <h2>Our Services</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>AI Consulting</h3>
+                        <p>Expert guidance for your AI journey</p>
+                    </div>
+                    <div class="card">
+                        <h3>Implementation</h3>
+                        <p>End-to-end AI solution deployment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content talents" id="talents">
+            <div class="glass-card">
+                <h2>AI/ML Talent Pool</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Find Talent</h3>
+                        <p>Connect with top AI/ML engineers</p>
+                    </div>
+                    <div class="card">
+                        <h3>Join Pool</h3>
+                        <p>Are you an AI expert? Join our network</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content kids" id="kids">
+            <div class="glass-card">
+                <h2>AI for Kids</h2>
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>Free Workshops</h3>
+                        <p>Introduction to AI for school children</p>
+                    </div>
+                    <div class="card">
+                        <h3>Learning Resources</h3>
+                        <p>Kid-friendly AI learning materials</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
