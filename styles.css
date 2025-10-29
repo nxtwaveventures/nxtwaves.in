@@ -227,24 +227,48 @@ h1 {
 /* Clarity Card Styling */
 .clarity-card {
     background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%) !important;
-    border: 1px solid #c7d2fe !important;
+    border: 2px solid #3b82f6 !important;
+    box-shadow: 0 8px 25px rgba(59, 130, 246, 0.3) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.clarity-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #1d4ed8);
+}
+
+.clarity-card h3 {
+    color: #1e40af !important;
+    font-size: 1.5rem !important;
+}
+
+.clarity-card p {
+    color: #1f2937 !important;
 }
 
 .clarity-btn {
     display: inline-block;
-    background: #3b82f6;
+    background: linear-gradient(135deg, #3b82f6, #1d4ed8);
     color: white !important;
-    padding: 10px 20px;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: 500;
-    margin-top: 10px;
-    transition: background 0.3s ease;
+    font-weight: 600;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
 }
 
 .clarity-btn:hover {
-    background: #2563eb;
-    transform: translateY(-1px);
+    background: linear-gradient(135deg, #1d4ed8, #1e40af);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(59, 130, 246, 0.6);
 }
 
 h2 {
