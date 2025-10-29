@@ -224,6 +224,29 @@ h1 {
     transform: translateY(-5px);
 }
 
+/* Clarity Card Styling */
+.clarity-card {
+    background: linear-gradient(135deg, #f0f4ff 0%, #e0e7ff 100%) !important;
+    border: 1px solid #c7d2fe !important;
+}
+
+.clarity-btn {
+    display: inline-block;
+    background: #3b82f6;
+    color: white !important;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background 0.3s ease;
+}
+
+.clarity-btn:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+}
+
 h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
